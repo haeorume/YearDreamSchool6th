@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 문법표 | 이어드림스쿨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cheat-sheet.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="site-brand">
+        <span class="site-brand-icon" aria-hidden="true">🎓</span>
+        <div>
+          <p class="site-brand-label">YearDreamSchool6th</p>
+          <h1>실습 문법표</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="card cheat-sheet-card" id="practice-cheat-sheet-view">
+      <header class="cheat-sheet-header">
+        <div>
+          <h2>📋 실습 문법표</h2>
+          <p class="cheat-sheet-desc">실습 문제 <strong>정답 코드·SQL</strong>에서 뽑은 공식 패턴입니다. 풀이할 때 옆에 두고 참고하세요.</p>
+          <p class="cheat-sheet-meta" id="cheat-sheet-meta"></p>
+        </div>
+        <input
+          type="search"
+          id="cheat-sheet-search"
+          class="cheat-sheet-search"
+          placeholder="키워드 검색 (예: groupby, JOIN, range)…"
+          autocomplete="off"
+        >
+      </header>
+      <div class="cheat-sheet-filters" id="cheat-sheet-filters" role="tablist" aria-label="문법표 카테고리"></div>
+      <div class="cheat-sheet-grid cheat-sheet-grid--page" id="cheat-sheet-grid"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>이어드림스쿨 6기 · Python · SQL · NumPy · Pandas 실습 패턴 모음</p>
+    </footer>
+  </div>
+
+  <script src="js/practice-cheat-sheet.js"></script>
+</body>
+</html>
